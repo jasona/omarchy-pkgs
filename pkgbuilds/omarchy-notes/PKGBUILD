@@ -3,7 +3,7 @@
 pkgname=omarchy-notes
 replaces=('omarchy-notes-rust')
 conflicts=('omarchy-notes-rust')
-pkgver=1.0.2
+pkgver=1.1.0
 # Distinguish this cutover from the retired omarchy-notes 1.0.0-1 Qt package.
 pkgrel=2
 pkgdesc='Omarchy Notes — private local notes'
@@ -20,7 +20,7 @@ optdepends=('vulkan-driver: Vulkan driver for your GPU'
             'xdg-desktop-portal-hyprland: Hyprland portal integration'
             'xdg-desktop-portal-gtk: file chooser portal backend')
 source=("https://github.com/last-refuge/omarchy-notes/releases/download/rust-v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-b2sums=('9ad84efea2d4c0624fb2d581e5eeabed1645f0147ff26b470a125e794b0635dae255833455831f8e657a8f974d5bbde7f83248f341c081480d67878489d1acaa')
+b2sums=('9ac45fba8d38dd66c38a38215848d0ea88804aefd59ba006db1a53a321a32043e9edaedc1d307b4dd7fb699962a809ad80f13600836d764498244adfbf38c5d1')
 
 prepare() {
   export CARGO_HOME="$srcdir/cargo-home"
